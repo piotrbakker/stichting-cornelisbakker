@@ -24,13 +24,6 @@ $color-red: #7F1734;
 	@include all-text;
 	font-family: "baskerville-urw","Baskerville",Georgia,"Book Antiqua", serif;
 }
-@mixin signature {
-	@include all-text;
-	font-family: "caliban-std",sans-serif;
-	@media screen and (max-width: 480px) {
-		font-size: 2.2em; //32px
-	}
-}
 @mixin mobile-text {
 	@media screen and (max-width: 480px) {
 		font-size: 1.1em; //16px
@@ -39,183 +32,151 @@ $color-red: #7F1734;
 
 /* Typography: */
 
-.jumbotron .lead-text { //For some reason if I just format .lead-text it still gets somewhere else default Bootstrap styles, so need to add .jumbotron as well
-	@include serif;
-	font-size: 3.5em; //52px
-	font-weight: 600;
-	color: $color-white;
-	margin: 0px 0px 12px 0px;
-	@media screen and (max-width: 480px) {
-		font-size: 2em; //32px
-		margin: 0px 0px 0px 0px;
-	}
+.jumbotron {
+  
+  h1 {
+    @include serif;
+  	font-size: 2.5em; //52px
+  	font-weight: 500;
+    margin: 0px;
+    padding: 0px;
+  	@media screen and (max-width: 480px) {
+  		font-size: 2em; //32px
+  	}
+  }
+  
+  h2 {
+  	@include serif;
+  	@include mobile-text;
+  	font-size: 1.2em; //20px
+  	font-weight: 400;
+  }
+  
+  .stichting {
+  	font-style: italic;
+    margin: 0px;
+    padding: 0px;
+    opacity: 0.8;
+  }
+  
+  .lead {
+    margin-bottom: 40px;
+  	@media screen and (max-width: 480px) {
+  		margin-bottom: 24px;
+  	}
+  }
+  .navigation {
+    .button {
+    	@include serif;
+    	@include mobile-text;
+      color: $color-white;
+    	font-size: 1.225em; //18px
+    	font-weight: 400;
+    	font-style: italic; 
+    	background: none;
+    	border: 1px solid none;
+    	border-radius: 0px;
+    	padding: 2px 0px 0px 0px;
+    	opacity:0.7;
+  		a {
+  			text-decoration: none;	
+  		}
+  		&:hover {
+    		color: $color-white;
+    		border-bottom: solid 1px white;
+    		opacity:1;
+    		transition: 0.3s ease;
+  		}
+  		&:visited { // I'm trying to disabled the active state on iPad after clicking on links, work in progress...
+  			text-decoration: none; 
+  			decoration: none;
+  			opacity:0.7 !important;
+  		}
+  		&:active {
+  			box-shadow: none; // Removes standard Bootstrap inner shadow on click
+  		}	
+    }
+    .button-active {
+      @extend .button;
+    	border-bottom: solid 1px white;
+    	opacity:1;
+    }
+    a > .button, .button-active {
+    	margin-right: 16px;
+      @media screen and (max-width: 480px) {
+        margin-right: 8px;
+      }
+    }
+  }
 }
-
-.label-text { //"Stichting"
+p {
 	@include serif;
 	@include mobile-text;
-	font-size: 1.8em; //26px
-	font-style: italic;
-	font-weight: 400;
-	color: $color-white;
-	margin-top: 20px;
-}
-
-h2 {
-	@include serif;
-	@include mobile-text;
-	font-size: 1.4em; //20px
-	font-weight: 400;
-	color: $color-white;
-	margin-top: 6px;
-	margin-bottom: 40px;
-	@media screen and (max-width: 480px) {
-		margin-bottom: 20px;
-	}
-}
-
-.signature-text {
-	font-size: 40px;
-	@include signature;
-}
-
-.btn-inactive {
-	@include serif;
-	@include mobile-text;
+  color: $color-grey-80;
 	font-size: 1.225em; //18px
 	font-weight: 400;
-	font-style: italic; 
-	color: $color-white;
-	background: none;
-	border: 1px solid none;
-	border-radius:0px;
-	margin-right: 12px;
-	padding: 2px 0px 0px 0px;
-	opacity:0.7;
-		a {
-			text-decoration: none;	
-		}
-		&:hover {
-		color: $color-white;
-		border-bottom: solid 1px white;
-		opacity:1;
-		transition: 0.3s ease;
-		}
-		&:visited { // I'm trying to disabled the active state on iPad after clicking on links, work in progress...
-			text-decoration: none; 
-			decoration: none;
-			opacity:0.7 !important;
-		}
-		&:active {
-			box-shadow: none; // Removes standard Bootstrap inner shadow on click
-		}	
-}
-
-.btn-active {
-	@include serif;
-	@include mobile-text;
-	font-size: 1.225em; //18px
-	font-weight: 400;
-	font-style: italic; 
-	color: $color-white;
-	background: none;
-	border: 1px solid none;
-	border-bottom: solid 1px white;
-	border-radius:0px;
-	margin-right: 12px;
-	padding: 2px 0px 0px 0px;
-	opacity:1;
-		a {
-			text-decoration: none;	
-		}
-		&:hover {
-		color: $color-white;
-		border-bottom: solid 1px white;
-		opacity:1;
-		}
-		&:visited { // I'm trying to disabled the active state on iPad after clicking on links, work in progress...
-			text-decoration: none; 
-			decoration: none;
-			opacity:1 !important;
-		}
-		&:active {
-			box-shadow: none; // Removes standard Bootstrap inner shadow on click
-		}	
-}
-
-.container p {
-	@include serif;
-	@include mobile-text;
-	font-size: 1.225em; //18px
-	font-weight: 400;
-	color: $color-grey-80;
 	padding-top: 10px;
 }
-
 .custom-list-style {
 	@include serif;
 	@include mobile-text;
+  color: $color-grey-80;
 	font-size: 1.225em; //18px
 	font-weight: 400;
-	color: $color-grey-80;
 	border:none;
 }
 
-.date-place {
-	@include serif;
-	@include mobile-text;
-	font-size: 1.225em; //18px
-	font-weight: 400;
-	color: $color-grey-80;
-	border:none;
-	margin-top:-10px;
-}
-
+// Table
 .table-container {
 	box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.50);
 	border-radius: 4px;
 	padding: 10px;
 }
-
 .table-responsive {
 	@include sans-serif;
 	border: none;
 	tbody th {
+    color: $color-grey-80;
 		font-size: 0.9em; //14px
 		font-weight: 400;
-		color: $color-grey-80;
 	}
-}
-
-.border-top {
-	border-top: 1px solid $color-grey-15;
 }
 
 // Themes
 .background-white {
 	background: $color-white;
+  color: $color-grey-90;
 }
-
 .background-red {
 	background: $color-red;
+  color: $color-white;
 }
 
 // Layout
-
 html { // Added to enable fixed footer
   position: relative;
   min-height: 100%;
 }
-
 body { // Added to enable fixed footer
-  margin-bottom: 100px;   // Margin bottom by footer height
+  margin-bottom: 100px; // Margin bottom by footer height
 }
-
-.col-sm-8 { // this gives more space on mobile
-	@media screen and (max-width: 768px) {
-		padding-left: 30px;
-		padding-right: 30px;
-	}
+.container {
+  @media screen and (min-width: 0px) {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  @media screen and (min-width: 768px) {
+		padding-left: 32px;
+		padding-right: 32x;
+  }
+  @media screen and (min-width: 992px) {
+		padding-left: 128px;
+		padding-right: 128px;
+  }
+  @media screen and (min-width: 1200px) {
+		padding-left: 240px;
+		padding-right: 240px;
+  }
 }
 
 /* Footer */
@@ -225,15 +186,16 @@ body { // Added to enable fixed footer
   bottom: 0;
   width: 100%;
   height: 60px; 
-  margin-top: 10px;
+  margin-top: 8px;
+  .border {
+  	border-top: 1px solid $color-grey-15;
+  }
   p {
  		@include sans-serif;
  		@include mobile-text;
+    color: $color-grey-30;
  		font-size: 0.9em; //14px
  		font-weight: 400;
- 		// font-style: italic;
- 		color: $color-grey-30;
- 		opacity: 0.9;
- 		padding: 20px 0px 20px 0px;		
+ 		padding: 16px 0 16px 0;		
  }
 }

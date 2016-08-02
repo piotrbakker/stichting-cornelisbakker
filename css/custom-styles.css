@@ -1,154 +1,96 @@
 /* Colours: */
 /* Mixins */
 /* Typography: */
-.jumbotron .lead-text {
+.jumbotron h1 {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   font-family: "baskerville-urw","Baskerville",Georgia,"Book Antiqua", serif;
-  font-size: 3.5em;
-  font-weight: 600;
-  color: #FFFFFF;
-  margin: 0px 0px 12px 0px; }
+  font-size: 2.5em;
+  font-weight: 500;
+  margin: 0px;
+  padding: 0px; }
   @media screen and (max-width: 480px) {
-    .jumbotron .lead-text {
-      font-size: 2em;
-      margin: 0px 0px 0px 0px; } }
-
-.label-text {
+    .jumbotron h1 {
+      font-size: 2em; } }
+.jumbotron h2 {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   font-family: "baskerville-urw","Baskerville",Georgia,"Book Antiqua", serif;
-  font-size: 1.8em;
-  font-style: italic;
-  font-weight: 400;
-  color: #FFFFFF;
-  margin-top: 20px; }
+  font-size: 1.2em;
+  font-weight: 400; }
   @media screen and (max-width: 480px) {
-    .label-text {
+    .jumbotron h2 {
       font-size: 1.1em; } }
-
-h2 {
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  font-family: "baskerville-urw","Baskerville",Georgia,"Book Antiqua", serif;
-  font-size: 1.4em;
-  font-weight: 400;
-  color: #FFFFFF;
-  margin-top: 6px;
+.jumbotron .stichting {
+  font-style: italic;
+  margin: 0px;
+  padding: 0px;
+  opacity: 0.8; }
+.jumbotron .lead {
   margin-bottom: 40px; }
   @media screen and (max-width: 480px) {
-    h2 {
-      font-size: 1.1em; } }
-  @media screen and (max-width: 480px) {
-    h2 {
-      margin-bottom: 20px; } }
-
-.signature-text {
-  font-size: 40px;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  font-family: "caliban-std",sans-serif; }
-  @media screen and (max-width: 480px) {
-    .signature-text {
-      font-size: 2.2em; } }
-
-.btn-inactive {
+    .jumbotron .lead {
+      margin-bottom: 24px; } }
+.jumbotron .navigation .button, .jumbotron .navigation .button-active {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   font-family: "baskerville-urw","Baskerville",Georgia,"Book Antiqua", serif;
+  color: #FFFFFF;
   font-size: 1.225em;
   font-weight: 400;
   font-style: italic;
-  color: #FFFFFF;
   background: none;
   border: 1px solid none;
   border-radius: 0px;
-  margin-right: 12px;
   padding: 2px 0px 0px 0px;
   opacity: 0.7; }
   @media screen and (max-width: 480px) {
-    .btn-inactive {
+    .jumbotron .navigation .button, .jumbotron .navigation .button-active {
       font-size: 1.1em; } }
-  .btn-inactive a {
+  .jumbotron .navigation .button a, .jumbotron .navigation .button-active a {
     text-decoration: none; }
-  .btn-inactive:hover {
+  .jumbotron .navigation .button:hover, .jumbotron .navigation .button-active:hover {
     color: #FFFFFF;
     border-bottom: solid 1px white;
     opacity: 1;
     transition: 0.3s ease; }
-  .btn-inactive:visited {
+  .jumbotron .navigation .button:visited, .jumbotron .navigation .button-active:visited {
     text-decoration: none;
     decoration: none;
     opacity: 0.7 !important; }
-  .btn-inactive:active {
+  .jumbotron .navigation .button:active, .jumbotron .navigation .button-active:active {
     box-shadow: none; }
-
-.btn-active {
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  font-family: "baskerville-urw","Baskerville",Georgia,"Book Antiqua", serif;
-  font-size: 1.225em;
-  font-weight: 400;
-  font-style: italic;
-  color: #FFFFFF;
-  background: none;
-  border: 1px solid none;
+.jumbotron .navigation .button-active {
   border-bottom: solid 1px white;
-  border-radius: 0px;
-  margin-right: 12px;
-  padding: 2px 0px 0px 0px;
   opacity: 1; }
+.jumbotron .navigation a > .button, .jumbotron .navigation a > .button-active, .jumbotron .navigation .button-active {
+  margin-right: 16px; }
   @media screen and (max-width: 480px) {
-    .btn-active {
-      font-size: 1.1em; } }
-  .btn-active a {
-    text-decoration: none; }
-  .btn-active:hover {
-    color: #FFFFFF;
-    border-bottom: solid 1px white;
-    opacity: 1; }
-  .btn-active:visited {
-    text-decoration: none;
-    decoration: none;
-    opacity: 1 !important; }
-  .btn-active:active {
-    box-shadow: none; }
+    .jumbotron .navigation a > .button, .jumbotron .navigation a > .button-active, .jumbotron .navigation .button-active {
+      margin-right: 8px; } }
 
-.container p {
+p {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   font-family: "baskerville-urw","Baskerville",Georgia,"Book Antiqua", serif;
+  color: #2C2C2C;
   font-size: 1.225em;
   font-weight: 400;
-  color: #2C2C2C;
   padding-top: 10px; }
   @media screen and (max-width: 480px) {
-    .container p {
+    p {
       font-size: 1.1em; } }
 
 .custom-list-style {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   font-family: "baskerville-urw","Baskerville",Georgia,"Book Antiqua", serif;
+  color: #2C2C2C;
   font-size: 1.225em;
   font-weight: 400;
-  color: #2C2C2C;
   border: none; }
   @media screen and (max-width: 480px) {
     .custom-list-style {
-      font-size: 1.1em; } }
-
-.date-place {
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  font-family: "baskerville-urw","Baskerville",Georgia,"Book Antiqua", serif;
-  font-size: 1.225em;
-  font-weight: 400;
-  color: #2C2C2C;
-  border: none;
-  margin-top: -10px; }
-  @media screen and (max-width: 480px) {
-    .date-place {
       font-size: 1.1em; } }
 
 .table-container {
@@ -162,18 +104,17 @@ h2 {
   font-family: Helvetica, Arial, sans-serif;
   border: none; }
   .table-responsive tbody th {
+    color: #2C2C2C;
     font-size: 0.9em;
-    font-weight: 400;
-    color: #2C2C2C; }
-
-.border-top {
-  border-top: 1px solid #DBDBDB; }
+    font-weight: 400; }
 
 .background-white {
-  background: #FFFFFF; }
+  background: #FFFFFF;
+  color: #222222; }
 
 .background-red {
-  background: #7F1734; }
+  background: #7F1734;
+  color: #FFFFFF; }
 
 html {
   position: relative;
@@ -182,10 +123,22 @@ html {
 body {
   margin-bottom: 100px; }
 
-@media screen and (max-width: 768px) {
-  .col-sm-8 {
-    padding-left: 30px;
-    padding-right: 30px; } }
+@media screen and (min-width: 0px) {
+  .container {
+    padding-left: 24px;
+    padding-right: 24px; } }
+@media screen and (min-width: 768px) {
+  .container {
+    padding-left: 32px;
+    padding-right: 32x; } }
+@media screen and (min-width: 992px) {
+  .container {
+    padding-left: 128px;
+    padding-right: 128px; } }
+@media screen and (min-width: 1200px) {
+  .container {
+    padding-left: 240px;
+    padding-right: 240px; } }
 
 /* Footer */
 .footer {
@@ -193,16 +146,17 @@ body {
   bottom: 0;
   width: 100%;
   height: 60px;
-  margin-top: 10px; }
+  margin-top: 8px; }
+  .footer .border {
+    border-top: 1px solid #DBDBDB; }
   .footer p {
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     font-family: Helvetica, Arial, sans-serif;
+    color: #ACACAC;
     font-size: 0.9em;
     font-weight: 400;
-    color: #ACACAC;
-    opacity: 0.9;
-    padding: 20px 0px 20px 0px; }
+    padding: 16px 0 16px 0; }
     @media screen and (max-width: 480px) {
       .footer p {
         font-size: 1.1em; } }
