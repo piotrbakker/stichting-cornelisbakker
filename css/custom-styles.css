@@ -20,7 +20,7 @@
   font-weight: 400; }
   @media screen and (max-width: 480px) {
     .jumbotron h2 {
-      font-size: 1.1em; } }
+      font-size: 1.2em; } }
 .jumbotron .stichting {
   font-style: italic;
   margin: 0px;
@@ -46,7 +46,7 @@
   opacity: 0.7; }
   @media screen and (max-width: 480px) {
     .jumbotron .navigation .button, .jumbotron .navigation .button-active {
-      font-size: 1.1em; } }
+      font-size: 1.2em; } }
   .jumbotron .navigation .button a, .jumbotron .navigation .button-active a {
     text-decoration: none; }
   .jumbotron .navigation .button:hover, .jumbotron .navigation .button-active:hover {
@@ -79,7 +79,7 @@ p {
   padding-top: 10px; }
   @media screen and (max-width: 480px) {
     p {
-      font-size: 1.1em; } }
+      font-size: 1.2em; } }
 
 .custom-list-style {
   -webkit-font-smoothing: antialiased;
@@ -91,7 +91,7 @@ p {
   border: none; }
   @media screen and (max-width: 480px) {
     .custom-list-style {
-      font-size: 1.1em; } }
+      font-size: 1.2em; } }
 
 .table-container {
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.5);
@@ -159,6 +159,6 @@ body {
     padding: 16px 0 16px 0; }
     @media screen and (max-width: 480px) {
       .footer p {
-        font-size: 1.1em; } }
+        font-size: 1.2em; } }
 
 /*# sourceMappingURL=custom-styles.css.map */
