@@ -16,10 +16,10 @@ $color-red: #7F1734;
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
 }
-@mixin sans-serif { 
+@mixin sans-serif {
 	@include all-text;
 	font-family: Helvetica, Arial, sans-serif; //Currently only in use for Table contents in Financien
-} 
+}
 @mixin serif {
 	@include all-text;
 	font-family: "baskerville-urw","Baskerville",Georgia,"Book Antiqua", serif;
@@ -33,7 +33,7 @@ $color-red: #7F1734;
 /* Typography: */
 
 .jumbotron {
-  
+
   h1 {
     @include serif;
   	font-size: 2.5em; //52px
@@ -44,21 +44,21 @@ $color-red: #7F1734;
   		font-size: 2em; //32px
   	}
   }
-  
+
   h2 {
   	@include serif;
   	@include mobile-text;
   	font-size: 1.2em; //20px
   	font-weight: 400;
   }
-  
+
   .stichting {
   	font-style: italic;
     margin: 0px;
     padding: 0px;
     opacity: 0.8;
   }
-  
+
   .lead {
     margin-bottom: 40px;
   	@media screen and (max-width: 480px) {
@@ -72,14 +72,14 @@ $color-red: #7F1734;
       color: $color-white;
     	font-size: 1.225em; //18px
     	font-weight: 400;
-    	font-style: italic; 
+    	font-style: italic;
     	background: none;
     	border: 1px solid none;
     	border-radius: 0px;
     	padding: 2px 0px 0px 0px;
     	opacity:0.7;
   		a {
-  			text-decoration: none;	
+  			text-decoration: none;
   		}
   		&:hover {
     		color: $color-white;
@@ -88,13 +88,13 @@ $color-red: #7F1734;
     		transition: 0.3s ease;
   		}
   		&:visited { // I'm trying to disabled the active state on iPad after clicking on links, work in progress...
-  			text-decoration: none; 
+  			text-decoration: none;
   			decoration: none;
   			opacity:0.7 !important;
   		}
   		&:active {
   			box-shadow: none; // Removes standard Bootstrap inner shadow on click
-  		}	
+  		}
     }
     .button-active {
       @extend .button;
@@ -125,6 +125,25 @@ p {
 	font-weight: 400;
 	border:none;
 }
+
+// Images
+
+.image-article {
+	padding: 1.225em 0 1.225em 0;
+	.image-article-caption {
+		@extend p;
+		color: $color-grey-80;
+		font-size: 1.15em;
+		font-style: italic;
+	}
+}
+.portrait {
+	max-width: 400px;
+}
+.landscape {
+	width: 100%;
+}
+
 
 // Table
 .table-container {
@@ -185,7 +204,7 @@ body { // Added to enable fixed footer
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 60px; 
+  height: 60px;
   margin-top: 8px;
   .border {
   	border-top: 1px solid $color-grey-15;
@@ -196,6 +215,6 @@ body { // Added to enable fixed footer
     color: $color-grey-30;
  		font-size: 0.9em; //14px
  		font-weight: 400;
- 		padding: 16px 0 16px 0;		
+ 		padding: 16px 0 16px 0;
  }
 }
