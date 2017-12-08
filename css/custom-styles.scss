@@ -109,6 +109,17 @@ $color-red: #7F1734;
     }
   }
 }
+.scroll { // Add horizontal scrolling to navigation on mobile
+  white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+::-webkit-scrollbar {
+    width: 0px;  // Removes scrollbar space
+    background: transparent;  // Makes scrollbar invisible
+}
+
 p {
 	@include serif;
 	@include mobile-text;

@@ -69,6 +69,16 @@
     .jumbotron .navigation a > .button, .jumbotron .navigation a > .button-active, .jumbotron .navigation .button-active {
       margin-right: 8px; } }
 
+.scroll {
+  white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar; }
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; }
+
 p, .image-article .image-article-caption {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
