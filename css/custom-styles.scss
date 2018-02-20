@@ -120,6 +120,44 @@ $color-red: #7F1734;
     background: transparent;  // Makes scrollbar invisible
 }
 
+.pager li > a {
+	@include serif;
+	@include mobile-text;
+  color: $color-grey-90;
+	font-size: 1.225em; //18px
+	font-weight: 400;
+	font-style: italic;
+
+	border: none;
+	border-radius: 0px;
+	border-bottom: solid 1px $color-white;
+	padding: 2px 0px 0px 0px;
+	&:hover {
+		background: none;
+		border-bottom: solid 1px $color-grey-80;
+	}
+}
+
+.arrow {
+	color: $color-grey-80;
+	border: none;
+	border-radius: 0px;
+	border-bottom: solid 1px $color-white;
+	&:hover {
+		background: none;
+		border-bottom: solid 1px $color-grey-80;
+	}
+}
+
+h2 {
+	@include serif;
+	font-size: 2em; //20px
+	font-weight: 600;
+	@media screen and (max-width: 480px) {
+		font-size: 1.6em; //16px
+	}
+}
+
 p {
 	@include serif;
 	@include mobile-text;

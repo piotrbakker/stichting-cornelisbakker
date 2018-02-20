@@ -79,6 +79,44 @@
   width: 0px;
   background: transparent; }
 
+.pager li > a {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: "baskerville-urw","Baskerville",Georgia,"Book Antiqua", serif;
+  color: #222222;
+  font-size: 1.225em;
+  font-weight: 400;
+  font-style: italic;
+  border: none;
+  border-radius: 0px;
+  border-bottom: solid 1px #FFFFFF;
+  padding: 2px 0px 0px 0px; }
+  @media screen and (max-width: 480px) {
+    .pager li > a {
+      font-size: 1.2em; } }
+  .pager li > a:hover {
+    background: none;
+    border-bottom: solid 1px #2C2C2C; }
+
+.arrow {
+  color: #2C2C2C;
+  border: none;
+  border-radius: 0px;
+  border-bottom: solid 1px #FFFFFF; }
+  .arrow:hover {
+    background: none;
+    border-bottom: solid 1px #2C2C2C; }
+
+h2 {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: "baskerville-urw","Baskerville",Georgia,"Book Antiqua", serif;
+  font-size: 2em;
+  font-weight: 600; }
+  @media screen and (max-width: 480px) {
+    h2 {
+      font-size: 1.6em; } }
+
 p, .image-article .image-article-caption {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
