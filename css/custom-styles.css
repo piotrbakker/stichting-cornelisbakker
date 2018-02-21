@@ -117,6 +117,9 @@ h2 {
     h2 {
       font-size: 1.6em; } }
 
+.header--labeled {
+  margin-bottom: 0; }
+
 p, .image-article .image-article-caption {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -128,6 +131,12 @@ p, .image-article .image-article-caption {
   @media screen and (max-width: 480px) {
     p, .image-article .image-article-caption {
       font-size: 1.2em; } }
+
+.paragraph__header {
+  font-style: italic; }
+
+.paragraph--disabled {
+  color: #808080; }
 
 .custom-list-style {
   -webkit-font-smoothing: antialiased;

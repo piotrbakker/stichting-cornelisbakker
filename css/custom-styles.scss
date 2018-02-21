@@ -158,6 +158,10 @@ h2 {
 	}
 }
 
+.header--labeled {
+	margin-bottom: 0;
+}
+
 p {
 	@include serif;
 	@include mobile-text;
@@ -166,6 +170,15 @@ p {
 	font-weight: 400;
 	padding-top: 10px;
 }
+
+.paragraph__header {
+	font-style: italic;
+}
+
+.paragraph--disabled {
+	color: $color-grey-50;
+}
+
 .custom-list-style {
 	@include serif;
 	@include mobile-text;
