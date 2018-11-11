@@ -115,9 +115,12 @@ $color-red: #7F1734;
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: -ms-autohiding-scrollbar;
 }
-::-webkit-scrollbar {
-    width: 0px;  // Removes scrollbar space
-    background: transparent;  // Makes scrollbar invisible
+
+@media (max-width: 576px) {
+  ::-webkit-scrollbar {
+      width: 0px;  // Removes scrollbar space
+      background: transparent;  // Makes scrollbar invisible
+  }
 }
 
 .pager li > a {
