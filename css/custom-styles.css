@@ -1,299 +1,707 @@
-/* Colours: */
-/* Mixins */
-/* Typography: */
-.jumbotron h1 {
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  font-family: "baskerville-urw", "Baskerville", Georgia, "Book Antiqua", serif;
-  font-size: 2.5em;
-  font-weight: 500;
-  margin: 0px;
-  padding: 0px;
-}
-@media screen and (max-width: 480px) {
-  .jumbotron h1 {
-    font-size: 2em;
-  }
-}
-.jumbotron h2 {
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  font-family: "baskerville-urw", "Baskerville", Georgia, "Book Antiqua", serif;
-  font-size: 1.2em;
-  font-weight: 400;
-}
-@media screen and (max-width: 480px) {
-  .jumbotron h2 {
-    font-size: 1.2em;
-  }
-}
-.jumbotron .stichting {
-  font-style: italic;
-  margin: 0px;
-  padding: 0px;
-  opacity: 0.8;
-}
-.jumbotron .lead {
-  margin-bottom: 40px;
-}
-@media screen and (max-width: 480px) {
-  .jumbotron .lead {
-    margin-bottom: 24px;
-  }
-}
-.jumbotron .navigation .button, .jumbotron .navigation .button-active {
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  font-family: "baskerville-urw", "Baskerville", Georgia, "Book Antiqua", serif;
-  color: #FFFFFF;
-  font-size: 1.225em;
-  font-weight: 400;
-  font-style: italic;
-  background: none;
-  border: 1px solid none;
-  border-radius: 0px;
-  padding: 2px 0px 0px 0px;
-  opacity: 0.7;
-}
-@media screen and (max-width: 480px) {
-  .jumbotron .navigation .button, .jumbotron .navigation .button-active {
-    font-size: 1.2em;
-  }
-}
-.jumbotron .navigation .button a, .jumbotron .navigation .button-active a {
-  text-decoration: none;
-}
-.jumbotron .navigation .button:hover, .jumbotron .navigation .button-active:hover {
-  color: #FFFFFF;
-  border-bottom: solid 1px white;
-  opacity: 1;
-  transition: 0.3s ease;
-}
-.jumbotron .navigation .button:visited, .jumbotron .navigation .button-active:visited {
-  text-decoration: none;
-  decoration: none;
-  opacity: 0.7 !important;
-}
-.jumbotron .navigation .button:active, .jumbotron .navigation .button-active:active {
-  box-shadow: none;
-}
-.jumbotron .navigation .button-active {
-  border-bottom: solid 1px white;
-  opacity: 1;
-}
-.jumbotron .navigation a > .button, .jumbotron .navigation .button-active {
-  margin-right: 16px;
-}
-@media screen and (max-width: 480px) {
-  .jumbotron .navigation a > .button, .jumbotron .navigation .button-active {
-    margin-right: 8px;
-  }
-}
-
-.scroll {
-  white-space: nowrap;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  -ms-overflow-style: -ms-autohiding-scrollbar;
-}
-
-@media (max-width: 576px) {
-  ::-webkit-scrollbar {
-    width: 0px;
-    background: transparent;
-  }
-}
-.pager li > a {
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  font-family: "baskerville-urw", "Baskerville", Georgia, "Book Antiqua", serif;
-  color: #222222;
-  font-size: 1.225em;
-  font-weight: 400;
-  font-style: italic;
-  border: none;
-  border-radius: 0px;
-  border-bottom: solid 1px #FFFFFF;
-  padding: 2px 0px 0px 0px;
-}
-@media screen and (max-width: 480px) {
-  .pager li > a {
-    font-size: 1.2em;
-  }
-}
-.pager li > a:hover {
-  background: none;
-  border-bottom: solid 1px #2C2C2C;
-}
-
-.arrow {
-  color: #2C2C2C;
-  border: none;
-  border-radius: 0px;
-  border-bottom: solid 1px #FFFFFF;
-}
-.arrow:hover {
-  background: none;
-  border-bottom: solid 1px #2C2C2C;
-}
-
-h2 {
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  font-family: "baskerville-urw", "Baskerville", Georgia, "Book Antiqua", serif;
-  font-size: 2em;
-  font-weight: 600;
-}
-@media screen and (max-width: 480px) {
-  h2 {
-    font-size: 1.6em;
-  }
-}
-
-.header--labeled {
-  margin-bottom: 0;
-}
-
-p, .image-article .image-article-caption {
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  font-family: "baskerville-urw", "Baskerville", Georgia, "Book Antiqua", serif;
-  color: #2C2C2C;
-  font-size: 1.225em;
-  font-weight: 400;
-  padding-top: 10px;
-}
-@media screen and (max-width: 480px) {
-  p, .image-article .image-article-caption {
-    font-size: 1.2em;
-  }
-}
-
-.paragraph__header {
-  font-style: italic;
-}
-
-.paragraph--disabled {
-  color: #808080;
-}
-
-.custom-list-style {
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  font-family: "baskerville-urw", "Baskerville", Georgia, "Book Antiqua", serif;
-  color: #2C2C2C;
-  font-size: 1.225em;
-  font-weight: 400;
-  border: none;
-}
-@media screen and (max-width: 480px) {
-  .custom-list-style {
-    font-size: 1.2em;
-  }
-}
-
-.image-article {
-  padding: 1.225em 0 1.225em 0;
-}
-.image-article .image-article-caption {
-  color: #2C2C2C;
-  font-size: 1.15em;
-  font-style: italic;
-}
-
-.portrait {
-  max-width: 400px;
-}
-
-.landscape {
-  width: 100%;
-}
-
-.table-container {
-  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.5);
-  border-radius: 4px;
-  padding: 10px;
-}
-
-.table-responsive {
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  font-family: Helvetica, Arial, sans-serif;
-  border: none;
-}
-.table-responsive tbody th {
-  color: #2C2C2C;
-  font-size: 0.9em;
-  font-weight: 400;
-}
-
-.background-white {
-  background: #FFFFFF;
-  color: #222222;
-}
-
-.background-red {
-  background: #7F1734;
-  color: #FFFFFF;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
+html, body {
+  height: 100%;
 }
 
 body {
-  margin-bottom: 100px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-@media screen and (min-width: 0px) {
-  .container {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
+input[type=text], textarea {
+  outline: none;
+  box-shadow: none !important;
 }
-@media screen and (min-width: 768px) {
-  .container {
-    padding-left: 32px;
-    padding-right: 32x;
-  }
+
+.navbar {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
-@media screen and (min-width: 992px) {
-  .container {
-    padding-left: 128px;
-    padding-right: 128px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .container {
-    padding-left: 240px;
-    padding-right: 240px;
+@media (min-width: 992px) {
+  .navbar {
+    padding-left: 0;
   }
 }
 
-/* Footer */
+.navbar-nav > .active {
+  border-bottom: 0.0625rem solid #FFFFFF;
+  opacity: 1;
+}
+
+@media (max-width: 992px) {
+  .navbar-light .navbar-nav .nav-link {
+    color: #7F1734;
+    opacity: 1;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.nav-link {
+  cursor: pointer;
+}
+
+.navbar-toggler {
+  border: none;
+  padding: 0;
+  outline: none;
+  box-shadow: none !important;
+}
+
 .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 60px;
-  margin-top: 8px;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
-.footer .border {
-  border-top: 1px solid #DBDBDB;
+.footer .list-group, .footer .list-group-item {
+  background: none;
+  border: none;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
-.footer p, .footer .image-article .image-article-caption, .image-article .footer .image-article-caption {
+
+.footer a {
+  color: #FFFFFF;
+}
+.footer a:hover {
+  color: #FFFFFF;
+  opacity: 0.5;
+  text-decoration: none;
+}
+@media (max-width: 992px) {
+  .footer a {
+    color: #191716;
+  }
+  .footer a:hover {
+    color: #191716;
+    opacity: 0.5;
+    text-decoration: none;
+  }
+}
+
+.list-group-item-action {
+  color: #191716;
+}
+.list-group-item-action:hover {
+  color: #7F1734;
+}
+
+.input-group, .input-group-lg {
+  background: none;
+  border: none;
+}
+
+.input-group-text {
+  background: none;
+  border: none;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  font-family: Helvetica, Arial, sans-serif;
-  color: #ACACAC;
-  font-size: 0.9em;
-  font-weight: 400;
-  padding: 16px 0 16px 0;
+  color: #191716;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  color: #191716;
+  font-family: "baskerville-urw", "Baskerville", Georgia, "Book Antiqua", serif;
 }
-@media screen and (max-width: 480px) {
-  .footer p, .footer .image-article .image-article-caption, .image-article .footer .image-article-caption {
-    font-size: 1.2em;
+
+.form-control {
+  background: none;
+  border: none;
+}
+
+.jumbotron {
+  background: none;
+  padding-top: 1.5rem;
+  padding-bottom: 0;
+  margin-bottom: 1.5rem;
+}
+
+.card {
+  border: none;
+}
+
+.btn {
+  border: none;
+}
+
+button:focus {
+  outline: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover {
+  text-decoration: none;
+}
+
+kbd {
+  background-color: #FFFFFF;
+  border: 0.0625rem solid #DBDBDB;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  color: #191716;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  color: #191716;
+  font-family: "baskerville-urw", "Baskerville", Georgia, "Book Antiqua", serif;
+}
+
+tbody > tr > td:nth-child(odd) {
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+tbody > tr > td:nth-child(even) {
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.table-striped > tbody > tr:nth-child(odd) > td,
+.table-striped > tbody > tr:nth-child(odd) > th {
+  background-color: #F9F9F9;
+}
+
+.blockquote {
+  border-left: 0.25rem solid #7F1734;
+  padding-left: 1rem;
+}
+
+dl {
+  border: 0.25rem solid #F9F9F9;
+  padding-top: 1rem;
+}
+
+.navLink {
+  padding: 0 0 0.125rem 0;
+}
+
+.navLink__reversed {
+  color: #FFFFFF;
+}
+.navLink__reversed:hover {
+  color: #FFFFFF;
+  opacity: 1;
+  text-decoration: none;
+}
+.navLink__reversed:active {
+  color: #FFFFFF;
+  opacity: 1;
+}
+.navLink__reversed:visited {
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+.iconApp {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 1rem;
+}
+
+.iconApp__desktopNav {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 1rem;
+  margin-right: 1rem;
+}
+
+.image__inline {
+  max-width: 24rem;
+}
+
+.sectionContent {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.sectionCard {
+  padding-top: 3rem;
+}
+@media (max-width: 992px) {
+  .sectionCard {
+    padding-top: 2rem;
+  }
+}
+
+.hr__reversed {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.header {
+  color: #191716;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  color: #191716;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  color: #191716;
+  font-family: "baskerville-urw", "Baskerville", Georgia, "Book Antiqua", serif;
+}
+
+.header__h1 {
+  font-weight: 700;
+}
+
+.header__h2 {
+  font-weight: 700;
+}
+
+.header__h3 {
+  font-weight: 800;
+}
+
+.header__reversed {
+  color: #FFFFFF;
+}
+
+.headerEmoji {
+  font-size: 2.5rem;
+}
+
+.bodyCopy {
+  color: #191716;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  color: #191716;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  color: #191716;
+  font-family: "baskerville-urw", "Baskerville", Georgia, "Book Antiqua", serif;
+}
+
+.bodyCopy__lean {
+  font-weight: 200;
+}
+
+.bodyCopy__italic {
+  font-style: italic;
+}
+
+.bodyCopy__bold, .listItem__footer:nth-child(1) {
+  font-weight: 500;
+}
+
+.bodyCopy__caps {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.bodyCopy__link {
+  color: #2191FB;
+  font-style: italic;
+}
+
+.bodyCopy__reversed {
+  color: #FFFFFF;
+}
+
+.bodyCopy--dimmed {
+  opacity: 0.5;
+}
+
+.bodyCopy--disabled {
+  color: #808080;
+}
+
+.bodyCopy--highlight {
+  color: #2191FB;
+}
+
+.bodyCopy--list {
+  list-style-type: circle;
+}
+
+.bodyCopy--action {
+  color: #191716;
+  font-style: italic;
+}
+.bodyCopy--action:hover {
+  color: #7F1734;
+  text-decoration: none;
+}
+
+.listItem {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  color: #191716;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  color: #191716;
+  font-family: "baskerville-urw", "Baskerville", Georgia, "Book Antiqua", serif;
+}
+
+.listItem__navbar {
+  font-size: 1.125rem;
+  font-weight: 400;
+  font-style: italic;
+  margin-right: 1rem;
+  text-decoration: none;
+  opacity: 0.64;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  color: #191716;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  color: #191716;
+  font-family: "baskerville-urw", "Baskerville", Georgia, "Book Antiqua", serif;
+}
+.listItem__navbar:hover {
+  border-bottom: 0.0625rem solid #FFFFFF;
+  transition: ease;
+  opacity: 1;
+}
+
+.listItem__link {
+  color: #191716;
+  opacity: 1;
+}
+.listItem__link:hover {
+  color: #191716;
+  opacity: 0.8;
+  text-decoration: none;
+}
+.listItem__link:active {
+  color: #191716;
+  opacity: 0.64;
+}
+.listItem__link:visited {
+  color: #191716;
+  opacity: 1;
+}
+
+.listItem__linkReversed {
+  color: #FFFFFF;
+  opacity: 1;
+}
+.listItem__linkReversed:hover {
+  color: #FFFFFF;
+  opacity: 0.8;
+  text-decoration: none;
+}
+.listItem__linkReversed:active {
+  color: #FFFFFF;
+  opacity: 0.64;
+}
+.listItem__linkReversed:visited {
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+.listItem__footer:nth-child(1) {
+  text-transform: uppercase;
+}
+
+.btnText {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  color: #191716;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  color: #191716;
+  font-family: "baskerville-urw", "Baskerville", Georgia, "Book Antiqua", serif;
+}
+
+.btnText__primary {
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: italic;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: #FFFFFF;
+}
+
+.btnText__primaryReversed {
+  color: #191716;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.btnType__primary {
+  background: #7F1734;
+}
+.btnType__primary:hover {
+  background: #7F1734;
+  opacity: 0.8;
+}
+.btnType__primary:active {
+  background: #7F1734;
+  opacity: 0.64;
+}
+.btnType__primary:visited {
+  background: #7F1734;
+  opacity: 1;
+}
+
+.btnType__primaryReversed {
+  background: #FFFFFF;
+}
+.btnType__primaryReversed:hover {
+  background: #d6d6d6;
+}
+.btnType__primaryReversed:active {
+  background: #c2c2c2;
+}
+.btnType__primaryReversed:visited {
+  background: #FFFFFF;
+}
+
+.btnType__secondary {
+  background: #EC058E;
+}
+.btnType__secondary:hover {
+  background: #c40476;
+}
+.btnType__secondary:active {
+  background: #b0046a;
+}
+.btnType__secondary:visited {
+  background: #EC058E;
+}
+
+.btnType__discreet {
+  background: #FFFFFF;
+  border: 0.0625rem solid #DBDBDB;
+}
+.btnType__discreet:hover {
+  background: #FFFFFF;
+  border: 0.0625rem solid #DBDBDB;
+  opacity: 0.8;
+}
+.btnType__discreet:active {
+  background: #FFFFFF;
+  border: 0.0625rem solid #DBDBDB;
+  opacity: 0.64;
+}
+.btnType__discreet:visited {
+  background: #FFFFFF;
+  border: 0.0625rem solid #DBDBDB;
+  opacity: 1;
+}
+
+.reverseText {
+  color: #FFFFFF;
+}
+
+::selection {
+  background: rgba(127, 23, 52, 0.16);
+}
+
+::-moz-selection {
+  background: rgba(127, 23, 52, 0.16);
+}
+
+.fill--primary {
+  background: #7F1734;
+}
+
+.fill--dark {
+  background: #191716;
+}
+
+.fill--surface {
+  background: #FFFFFF;
+}
+
+.fill--surfaceElevated {
+  box-shadow: 0 0 3rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.fill--appIcon {
+  color: #016CC1;
+  box-shadow: 0 0 3rem 0 rgba(0, 0, 0, 0.24);
+}
+
+.surfaceRadius {
+  border-radius: 0.25rem;
+}
+
+.surfaceRadius__append {
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+
+.navbar-toggler .icon-bar {
+  background-color: #7F1734;
+  transform: rotate(0deg) translate(0px, 0px);
+  transition: ease all 0.2s;
+}
+
+.navbar-toggler .icon-bar {
+  display: block;
+  width: 1.5rem;
+  height: 0.125rem;
+  border-radius: 0.0625rem;
+}
+
+.navbar-toggler .icon-bar + .icon-bar {
+  margin-top: 0.375rem;
+}
+
+.icon-bar:nth-child(2) {
+  width: 1rem;
+  transform: translateX(0.5rem);
+  transition: ease all 0.2s;
+}
+
+.navbar-toggler:hover > .icon-bar:nth-child(2) {
+  width: 1.5rem;
+  transform: translateX(0);
+  transition: ease all 0.2s;
+}
+
+.navbar-toggler:active > .icon-bar:nth-child(2) {
+  width: 1.5rem;
+  transition: ease all 0.2s;
+}
+
+.navbar-toggler:not(.collapsed) .icon-bar:nth-child(1) {
+  transform: translateY(0.5rem);
+  transition: ease all 0.2s;
+}
+
+.navbar-toggler:not(.collapsed) .icon-bar:nth-child(2) {
+  opacity: 0;
+  transition: ease all 0.2s;
+}
+
+.navbar-toggler:not(.collapsed) .icon-bar:nth-child(3) {
+  transform: translateY(-0.5rem);
+  transition: ease all 0.2s;
+}
+
+@media (min-width: 992px) {
+  .introAnimation__1 {
+    animation: appear 500ms normal ease-out;
+  }
+
+  .introAnimation__2 > h1 {
+    animation: slideRight 400ms normal cubic-bezier(0, 1.4, 1, 1);
+  }
+
+  .introAnimation__2 > p {
+    animation: slideRight 600ms normal cubic-bezier(0, 1.4, 1, 1);
+  }
+
+  .introAnimation__2 > a > .btn {
+    animation: slideRight 800ms normal cubic-bezier(0, 1.4, 1, 1);
+  }
+
+  .introAnimation__2 > .navbar {
+    animation: slideRight 800ms normal cubic-bezier(0, 1.4, 1, 1);
+  }
+
+  .introAnimation__3 {
+    animation: slideUp 600ms normal cubic-bezier(0, 1.4, 1, 1);
+  }
+  .introAnimation__3 .dialogueCard .media:nth-child(1) {
+    animation: slideUp__message 700ms normal cubic-bezier(0, 1.4, 1, 1);
+  }
+  .introAnimation__3 .dialogueCard .media:nth-child(2) {
+    animation: slideUp__message 740ms normal cubic-bezier(0, 1.4, 1, 1);
+  }
+  .introAnimation__3 .dialogueCard .media:nth-child(3) {
+    animation: slideUp__message 780ms normal cubic-bezier(0, 1.4, 1, 1);
+  }
+  .introAnimation__3 .dialogueCard .media:nth-child(4) {
+    animation: slideUp__message 820ms normal cubic-bezier(0, 1.4, 1, 1);
+  }
+
+  .introAnimation__4 .navbar-nav .nav-item:nth-child(1) {
+    animation: scaleIn 400ms normal ease-out;
+  }
+  .introAnimation__4 .navbar-nav .nav-item:nth-child(2) {
+    animation: scaleIn 600ms normal ease-out;
+  }
+  .introAnimation__4 .navbar-nav .nav-item:nth-child(3) {
+    animation: scaleIn 800ms normal ease-out;
+  }
+  .introAnimation__4 .navbar-nav .nav-item:nth-child(4) {
+    animation: scaleIn 1000ms normal ease-out;
+  }
+  .introAnimation__4 .navbar-nav .nav-item:nth-child(5) {
+    animation: scaleIn 1400ms normal ease-out;
+  }
+  .introAnimation__4 .navbar-nav .nav-item:nth-child(6) {
+    animation: scaleIn 1200ms normal ease-out;
+  }
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slideRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-4rem);
+  }
+  25% {
+    opacity: 0;
+    transform: translateX(-4rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(4rem);
+  }
+  25% {
+    opacity: 0;
+    transform: translateY(4rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes slideUp__message {
+  0% {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  25% {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes scaleIn {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  75% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  80% {
+    opacity: 1;
+    transform: scale(1.25);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
   }
 }
 
