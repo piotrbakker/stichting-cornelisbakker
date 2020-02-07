@@ -254,13 +254,13 @@ tbody > tr > td:nth-child(even) {
   font-weight: 700;
 }
 .header__h2 {
-  font-weight: 700;
+  font-weight: 800;
 }
 .header__h3 {
   font-weight: 700;
 }
 .header__h4 {
-  font-weight: 700;
+  font-weight: 500;
 }
 .header__reversed {
   @include reverseText;
