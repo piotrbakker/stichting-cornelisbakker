@@ -141,9 +141,6 @@ input[type="text"], textarea {
   padding-bottom: 0;
   margin-bottom: 1.5rem;
 }
-.card {
-  // border: none;
-}
 .btn {
   border: none;
 }
@@ -153,6 +150,7 @@ button:focus {
 a {
   text-decoration: none;
   cursor: pointer;
+
   &:hover {
     text-decoration: none;
   }
