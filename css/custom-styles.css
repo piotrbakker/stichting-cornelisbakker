@@ -191,6 +191,19 @@ dl {
   opacity: 1;
 }
 
+.cardLink {
+  border-color: #DBDBDB;
+}
+.cardLink:hover {
+  border-color: #ACACAC;
+}
+.cardLink:active {
+  border-color: #ACACAC;
+}
+.cardLink:visited {
+  border-color: #DBDBDB;
+}
+
 .iconApp {
   width: 4rem;
   height: 4rem;

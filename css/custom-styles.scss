@@ -208,6 +208,21 @@ tbody > tr > td:nth-child(even) {
     opacity: 1;
   }
 }
+.cardLink {
+  border-color: $color-grey-15;
+
+  &:hover {
+    border-color: $color-grey-30;
+  }
+
+  &:active {
+    border-color: $color-grey-30;
+  }
+
+  &:visited {
+    border-color: $color-grey-15;
+  }
+}
 
 //Branding
 .iconApp {
