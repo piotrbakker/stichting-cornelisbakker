@@ -170,6 +170,14 @@ dl {
   padding-top: 1rem;
 }
 
+.modal-backdrop {
+  background-color: #191716;
+}
+
+.modal-backdrop.show {
+  opacity: 0.96;
+}
+
 .navLink {
   padding: 0 0 0.125rem 0;
 }

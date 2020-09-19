@@ -184,6 +184,12 @@ tbody > tr > td:nth-child(even) {
   border: 0.25rem solid $color-grey-05;
   padding-top: 1rem;
  }
+.modal-backdrop {
+  background-color: $color-grey-90;
+}
+.modal-backdrop.show {
+    opacity: 0.96;
+}
 
 // Navigation
 .navLink {
@@ -409,11 +415,6 @@ tbody > tr > td:nth-child(even) {
 }
 .btnText__primaryReversed {
   color: $color-grey-90;
-  font-size: 1.5rem;
-  font-weight: 700;
-  line-height: 2rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
 }
 .btnType__primary {
     background: $color-brown;
