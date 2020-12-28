@@ -1,5 +1,7 @@
 html, body {
   height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 body {
@@ -229,6 +231,14 @@ dl {
   max-width: 24rem;
 }
 
+.RedirectOverlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1001;
+  background-color: #7F1734;
+}
+
 .sectionContent {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -441,11 +451,6 @@ dl {
 
 .btnText__primaryReversed {
   color: #191716;
-  font-size: 1.5rem;
-  font-weight: 700;
-  line-height: 2rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
 }
 
 .btnType__primary {
