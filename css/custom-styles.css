@@ -327,6 +327,24 @@ dl {
   font-style: italic;
 }
 
+.bodyCopy__linkReversed {
+  color: #FFFFFF;
+  opacity: 1;
+}
+.bodyCopy__linkReversed:hover {
+  color: #FFFFFF;
+  opacity: 0.8;
+  text-decoration: none;
+}
+.bodyCopy__linkReversed:active {
+  color: #FFFFFF;
+  opacity: 0.64;
+}
+.bodyCopy__linkReversed:visited {
+  color: #FFFFFF;
+  opacity: 1;
+}
+
 .bodyCopy__reversed {
   color: #FFFFFF;
 }

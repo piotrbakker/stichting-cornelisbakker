@@ -320,6 +320,26 @@ tbody > tr > td:nth-child(even) {
   color: $color-blue-30;
   font-style: italic;
 }
+.bodyCopy__linkReversed {
+  color: $color-white;
+  opacity: 1;
+
+  &:hover {
+    color: $color-white;
+    opacity: 0.8;
+    text-decoration: none;
+  }
+
+  &:active {
+    color: $color-white;
+    opacity: 0.64;
+  }
+
+  &:visited {
+    color: $color-white;
+    opacity: 1;
+  }
+}
 .bodyCopy__reversed {
   @include reverseText;
 }
